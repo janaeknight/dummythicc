@@ -19,6 +19,5 @@ var sentences= [
 
 function getRandomSentence () {
     var index= Math.floor(Math.random() * (sentences.length));
-    return sentences[index];
+    console.log(index);
 }
-console.log(sentences);
