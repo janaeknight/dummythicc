@@ -1,23 +1,11 @@
-var sentences= [
-    'so fat not even Dora can explore her',
-    'so  fat I swerved to miss her and ran out of gas',
-    'so smelly she put on Right Guard and it went left',
-    'so fat she hasn’t got cellulite, she’s got celluheavy',
-    'so fat she don’t need no internet – she’s already world wide',
-    'so hair her armpits look like Don King in a headlock',
-    'so classless she could be a Marxist utopia',
-    'so fat she can hear bacon cooking in Canada',
-    'so fat she won “The Bachelor” because she all those other bitches',
-    'so stupid she believes everything that Brian Williams says',
-    'so ugly she scared off Flavor Flav',
-    'is like Domino’s Pizza, one call does it all',
-    'is twice the man you are',
-    'is like Bazooka Joe, 5 cents a blow',
-    'is like an ATM, open 24/7',
-    'is like a championship ring, everybody puts a finger in her'
-];
+// RANDOM QUOTE GENERATOR
 
-function getRandomSentence () {
-    var index= Math.floor(Math.random() * (sentences.length));
-    console.log(index);
+var possibleFortunes = [
+    "Your trouble will pass away soon.", "Be unconventional, even visionary.", "Don't count your chickens before they hatch.", "Anyone can hold the helm when the sea is calm.", "The mistakes of your past form the roots of the wisdom of you future.", "Dream of tomorrow, live in the now.", "You can't overcome fear by thinking about it.", "Life, death, balance.", "Some get wiser with age, some get richer, but everybody gets older.", "If you don't know, listen to those who do.", "Don't look a gift horse in the mouth.", "The fortune you seek is in another cookie.", "Sane is boring.", "Congratulations!", "You can have great success being a total idiot.", "Look for a needle in your haystack.", "When nothing goes right, go left.", "The answer is: A traffic light.", "Each day provides its own gifts.", "Questions travel far.", "Three can keep a secret if you get rid of two.", "It’s just a bad day, not a bad life.", "Don't get in cars with strangers.", "Feel the fear and do it anyway."
+]
+
+function randomQuote() {
+    var todayFortune = possibleFortunes[Math.floor(Math.random()*possibleFortunes.length)];
 }
+
+randomQuote();
